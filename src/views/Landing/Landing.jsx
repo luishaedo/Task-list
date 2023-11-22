@@ -1,18 +1,21 @@
 import React from "react";
-import styles from "../Landing/Landing.module.css"
+import styles from "../Landing/Landing.module.css";
 
 const Landing = () => {
-
-    return(
-        
-        <h2 className={styles.titulo}>Organiza tu día con [Nombre de la Aplicación]</h2>
-        
-    )
-
-}
+  return (
+    <div>
+      <h2 className={styles.titulo}>
+        Organiza tu día con [Nombre de la Aplicación]
+      </h2>
+      <h3>
+        Haz más, olvida menos: tu lista de tareas perfecta al alcance de tus
+        manos.
+      </h3>
+    </div>
+  );
+};
 
 export default Landing;
-
 
 // Encabezado:
 
