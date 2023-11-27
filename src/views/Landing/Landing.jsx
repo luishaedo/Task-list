@@ -1,17 +1,22 @@
-import React from "react";
-import styles from "../Landing/Landing.module.css";
+import React from 'react';
+import { Link } from 'react-router-dom'; 
+import { Container, Button } from 'react-bootstrap';
 
 const Landing = () => {
   return (
-    <div>
-      <h2 className={styles.titulo}>
-        Organiza tu día con [Nombre de la Aplicación]
-      </h2>
-      <h3>
-        Haz más, olvida menos: tu lista de tareas perfecta al alcance de tus
-        manos.
-      </h3>
-    </div>
+    <Container className="mt-5">
+      
+        <h1>Bienvenido a Nuestra App Task List</h1>
+        <p>
+          Organiza tus tareas de manera eficiente y mantén el control de tus actividades diarias.
+        </p>
+        <p>
+          <Link to="/home">
+            <Button variant="primary">Ir a la Lista de Tareas</Button>
+          </Link>
+        </p>
+      
+    </Container>
   );
 };
 

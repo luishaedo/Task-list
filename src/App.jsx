@@ -1,5 +1,6 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import { useState } from "react";
+
 import Home from "./views/Home/Home";
 import Landing from "./views/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
