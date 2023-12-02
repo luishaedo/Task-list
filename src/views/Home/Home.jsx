@@ -45,12 +45,13 @@ const Home = () => {
     setModalShowRealizadas(true);
   };
 
-  const handleRecuperarTarea = () => {
+  const handleRecuperarTarea = (index) => {
     const tareaRecuperada = tareaCompletada[index];
     setTareas([...tareas, tareaRecuperada]);
     const nuevasTareasCompletadas = tareaCompletada.filter(
       (_, i) => i !== index);
     setTareaCompletada(nuevasTareasCompletadas);
+    setTareas([...tareas, tareaRecuperada])
   };
 
   return (
